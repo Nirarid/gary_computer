@@ -1,0 +1,9 @@
+<launch>
+    
+    <!--Start Hector SLAM with teleop node-->
+    <include file="$(find gary_computer)/launch/starthector_slam_gary.launch" />
+    
+    <!--Start nav2d with collision avoidance-->
+    <include file="$(find gary_computer)/launch/collision_avoid_gary.launch" />
+
+</launch>
