@@ -20,7 +20,7 @@ class Meow():
         while not rospy.is_shutdown():
             if(self.sound == True):
                 rospy.loginfo("Hey!")
-                rospy.loginfo("Out of seeds! RETURN TO HOME")
+                rospy.loginfo("Out of seeds! GARY COME HOME D:")
                 playsound("./src/gary_computer/scripts/Gary_meows.mp3")
                 self.sound = False
             rate.sleep()
