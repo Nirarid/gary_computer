@@ -21,7 +21,7 @@ class Meow():
             if(self.sound == True):
                 rospy.loginfo("Hey!")
                 rospy.loginfo("Out of seeds! GARY COME HOME D:")
-                playsound("./src/gary_computer/scripts/Gary_meows.mp3")
+                playsound("./catkin_ws/src/gary_computer/scripts/Gary_meows.mp3")
                 self.sound = False
             rate.sleep()
     
@@ -40,7 +40,7 @@ class Meow():
 #Main code
 if __name__ == "__main__":
     rospy.init_node("sensor_meow",anonymous=True)
-    try:
-    	Meow()
-    except:
-        rospy.logfatal("sensor meow node died")
+    #try:
+    Meow()
+    #except:
+        #rospy.logfatal("sensor meow node died")
