@@ -7,6 +7,6 @@
     <include file="$(find gary_computer)/launch/collision_avoid_gary.launch" />
     
     <!--Start seeder sensing notifier-->
-    <!--node pkg="gary_computer" type="meow.py" name="sensor_meow" output="screen" /-->
+    <node pkg="gary_computer" type="meow.py" name="sensor_meow" output="screen" />
 
 </launch>
